@@ -27,27 +27,6 @@ npm run build
 npm run preview
 ```
 
-## Deployment to Cloudflare Pages
-
-### Build Settings
-
-- **Build command**: `npm run build`
-- **Output directory**: `dist`
-- **Node version**: 18 or higher
-
-### SPA Routing
-
-The `public/_redirects` file ensures all routes work correctly on Cloudflare Pages by redirecting all requests to `index.html`.
-
-### Deploy Steps
-
-1. Push code to GitHub
-2. Connect repository to Cloudflare Pages
-3. Set build command: `npm run build`
-4. Set output directory: `dist`
-5. Deploy
-
-Or upload the `dist/` folder directly via Cloudflare Pages dashboard.
 
 ## Features
 
