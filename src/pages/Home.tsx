@@ -30,10 +30,10 @@ export default function Home() {
                         animate={{ opacity: 1, y: 0 }}
                         transition={{ duration: 0.8 }}
                     >
-                        <h1 className="text-5xl md:text-8xl font-serif font-light mb-8 leading-tight text-parchment-text dark:text-obsidian-text tracking-tight">
+                        <h1 className="text-4xl md:text-8xl font-serif font-light mb-8 leading-tight text-parchment-text dark:text-obsidian-text tracking-tight">
                             The Examined Life
                         </h1>
-                        <p className="text-xl md:text-2xl text-parchment-muted dark:text-obsidian-muted font-light italic mb-16 max-w-2xl mx-auto">
+                        <p className="text-lg md:text-2xl text-parchment-muted dark:text-obsidian-muted font-light italic mb-16 max-w-2xl mx-auto">
                             A digital sanctuary for philosophical inquiry. Essays, fragments, and a chronological journey through human existence.
                         </p>
                         <div className="flex flex-col md:flex-row items-center justify-center gap-6">
@@ -62,16 +62,16 @@ export default function Home() {
             </div>
 
             {/* Book of Life Section */}
-            <section className="py-32 px-6 bg-parchment-bg dark:bg-zinc-900/50 relative overflow-hidden">
-                <div className="max-w-6xl mx-auto flex flex-col md:flex-row items-center gap-16">
-                    <div className="md:w-1/2 relative z-10">
+            <section className="py-20 md:py-32 px-6 bg-parchment-bg dark:bg-zinc-900/50 relative overflow-hidden">
+                <div className="max-w-6xl mx-auto flex flex-col md:flex-row items-center gap-12 md:gap-16">
+                    <div className="md:w-1/2 relative z-10 order-2 md:order-1">
                         <span className="text-xs font-sans uppercase tracking-[0.3em] text-parchment-accent dark:text-obsidian-accent mb-6 block">
                             The Core Journey
                         </span>
-                        <h2 className="text-4xl md:text-6xl font-serif font-light mb-8 text-parchment-text dark:text-obsidian-text leading-tight">
+                        <h2 className="text-3xl md:text-6xl font-serif font-light mb-6 md:mb-8 text-parchment-text dark:text-obsidian-text leading-tight">
                             The Book of Life
                         </h2>
-                        <p className="text-xl text-parchment-muted dark:text-obsidian-muted leading-relaxed mb-10">
+                        <p className="text-lg md:text-xl text-parchment-muted dark:text-obsidian-muted leading-relaxed mb-10">
                             A chronological exploration of the human experience. From the first spark of consciousness in <em>Genesis</em> to the final acceptance in <em>Legacy</em>. Start reading from the beginning or choose your chapter.
                         </p>
                         <Link
@@ -84,13 +84,13 @@ export default function Home() {
                             </svg>
                         </Link>
                     </div>
-                    <div className="md:w-1/2 relative">
+                    <div className="w-full md:w-1/2 relative order-1 md:order-2">
                         <div className="relative group perspective-1000">
                             <div className="absolute inset-0 bg-parchment-accent/20 blur-3xl transform group-hover:scale-110 transition-transform duration-700 rounded-full opacity-0 group-hover:opacity-100"></div>
                             <img
                                 src={bookCover}
                                 alt="The Book of Life"
-                                className="relative z-10 w-full max-w-sm mx-auto rounded-lg shadow-2xl transform transition-all duration-700 hover:scale-105 hover:-translate-y-2 hover:rotate-1"
+                                className="relative z-10 w-full max-w-[280px] md:max-w-sm mx-auto rounded-lg shadow-2xl transform transition-all duration-700 hover:scale-105 hover:-translate-y-2 hover:rotate-1"
                             />
                         </div>
                     </div>
@@ -98,14 +98,14 @@ export default function Home() {
             </section>
 
             {/* Latest Essays */}
-            <section className="py-32 px-6">
+            <section className="py-20 md:py-32 px-6">
                 <div className="max-w-7xl mx-auto">
-                    <div className="flex flex-col md:flex-row justify-between items-end mb-16">
-                        <div>
+                    <div className="flex flex-col md:flex-row justify-between items-end mb-12 md:mb-16">
+                        <div className="mb-6 md:mb-0">
                             <span className="text-xs font-sans uppercase tracking-[0.3em] text-parchment-accent dark:text-obsidian-accent mb-4 block">
                                 Deep Dives
                             </span>
-                            <h2 className="text-4xl md:text-5xl font-serif text-parchment-text dark:text-obsidian-text">
+                            <h2 className="text-3xl md:text-5xl font-serif text-parchment-text dark:text-obsidian-text">
                                 Recent Essays
                             </h2>
                         </div>
