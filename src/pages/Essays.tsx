@@ -12,11 +12,11 @@ export default function Essays() {
     return (
         <div className="min-h-screen bg-parchment-bg dark:bg-obsidian-bg transition-colors duration-500">
             {/* Hero Section */}
-            <div className="pt-32 pb-16 px-6 text-center">
-                <h1 className="text-6xl md:text-8xl font-serif font-light mb-6 text-parchment-text dark:text-obsidian-text tracking-tight">
+            <div className="pt-24 pb-12 md:pt-32 md:pb-16 px-6 text-center">
+                <h1 className="text-4xl md:text-8xl font-serif font-light mb-4 md:mb-6 text-parchment-text dark:text-obsidian-text tracking-tight">
                     The Archive
                 </h1>
-                <p className="text-xl md:text-2xl text-parchment-muted dark:text-obsidian-muted font-light italic max-w-2xl mx-auto leading-relaxed">
+                <p className="text-lg md:text-2xl text-parchment-muted dark:text-obsidian-muted font-light italic max-w-2xl mx-auto leading-relaxed">
                     Fragments of thought, preserved in text. Long-form explorations of the questions that haunt us.
                 </p>
             </div>

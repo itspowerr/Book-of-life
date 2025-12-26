@@ -5,15 +5,15 @@ export default function About() {
     return (
         <div className="min-h-screen bg-parchment-bg dark:bg-obsidian-bg transition-colors duration-500">
             {/* Hero Section */}
-            <div className="pt-32 pb-16 px-6 text-center">
+            <div className="pt-24 pb-12 md:pt-32 md:pb-16 px-6 text-center">
                 <motion.h1
                     initial={{ opacity: 0, y: 20 }}
                     animate={{ opacity: 1, y: 0 }}
-                    className="text-6xl md:text-8xl font-serif font-light mb-8 text-parchment-text dark:text-obsidian-text tracking-tight"
+                    className="text-4xl md:text-8xl font-serif font-light mb-6 md:mb-8 text-parchment-text dark:text-obsidian-text tracking-tight"
                 >
                     About This Space
                 </motion.h1>
-                <div className="w-24 h-1 bg-parchment-accent dark:bg-obsidian-accent mx-auto mb-16" />
+                <div className="w-16 md:w-24 h-1 bg-parchment-accent dark:bg-obsidian-accent mx-auto mb-12 md:mb-16" />
             </div>
 
             <div className="max-w-3xl mx-auto px-6 pb-32">

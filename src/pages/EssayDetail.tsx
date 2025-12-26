@@ -81,12 +81,12 @@ export default function EssayDetail() {
 
             <article className={`mx-auto px-6 transition-all duration-700 ${isReadingMode ? 'max-w-3xl py-32' : 'max-w-4xl py-12'}`}>
                 {/* Header */}
-                <header className="mb-16 text-center">
+                <header className="mb-12 md:mb-16 text-center">
                     {!isReadingMode && (
                         <motion.div
                             initial={{ opacity: 0 }}
                             animate={{ opacity: 1 }}
-                            className="flex items-center justify-center gap-4 text-xs font-sans uppercase tracking-widest text-parchment-muted dark:text-obsidian-muted mb-6"
+                            className="flex items-center justify-center gap-4 text-[10px] md:text-xs font-sans uppercase tracking-widest text-parchment-muted dark:text-obsidian-muted mb-4 md:mb-6"
                         >
                             <span>{new Date(essay.date).toLocaleDateString('en-US', { month: 'long', year: 'numeric' })}</span>
                             <span>•</span>
@@ -94,7 +94,7 @@ export default function EssayDetail() {
                         </motion.div>
                     )}
 
-                    <h1 className="text-4xl md:text-6xl font-serif font-light mb-8 text-parchment-text dark:text-obsidian-text leading-tight">
+                    <h1 className="text-3xl md:text-6xl font-serif font-light mb-6 md:mb-8 text-parchment-text dark:text-obsidian-text leading-tight">
                         {essay.title}
                     </h1>
 

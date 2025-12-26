@@ -18,7 +18,7 @@ export default function Life() {
     return (
         <div className="min-h-screen bg-parchment-bg dark:bg-obsidian-bg transition-colors duration-500">
             {/* Hero Section */}
-            <div ref={targetRef} className="relative h-[100svh] -mt-20 flex items-center justify-center p-6 overflow-hidden">
+            <div ref={targetRef} className="relative min-h-[100svh] pt-[60px] pb-20 md:pt-0 md:pb-0 md:-mt-20 flex items-center justify-center p-6 overflow-hidden">
                 <div className="absolute inset-0 opacity-10 pointer-events-none">
                     <div className="absolute inset-0 bg-gradient-to-b from-transparent to-parchment-bg dark:to-obsidian-bg" />
                     <div className="absolute inset-x-0 top-0 h-32 bg-gradient-to-b from-parchment-bg dark:from-obsidian-bg to-transparent" />
@@ -93,7 +93,7 @@ export default function Life() {
 
             {/* Table of Contents */}
             <div className="max-w-4xl mx-auto px-6 pb-32">
-                <div className="relative pl-8 md:pl-12 border-l border-parchment-border dark:border-obsidian-border space-y-16">
+                <div className="relative pl-6 md:pl-12 border-l border-parchment-border dark:border-obsidian-border space-y-12 md:space-y-16">
                     {chapters.map((chapter, index) => (
                         <motion.div
                             key={chapter.slug}
@@ -104,19 +104,19 @@ export default function Life() {
                             className="relative"
                         >
                             {/* Timeline Dot */}
-                            <div className="absolute -left-[41px] md:-left-[57px] top-8 w-4 h-4 rounded-full bg-parchment-bg dark:bg-obsidian-bg border-2 border-parchment-accent dark:border-obsidian-accent z-10" />
+                            <div className="absolute -left-[33px] md:-left-[57px] top-8 w-4 h-4 rounded-full bg-parchment-bg dark:bg-obsidian-bg border-2 border-parchment-accent dark:border-obsidian-accent z-10" />
 
                             <Link
                                 to={`/life/${chapter.slug}`}
                                 className="group block"
                             >
-                                <div className="p-8 bg-white dark:bg-zinc-900/30 border border-parchment-border dark:border-obsidian-border rounded-lg hover:border-parchment-accent dark:hover:border-obsidian-accent transition-all duration-300 hover:shadow-lg hover:-translate-y-1">
+                                <div className="p-6 md:p-8 bg-white dark:bg-zinc-900/30 border border-parchment-border dark:border-obsidian-border rounded-lg hover:border-parchment-accent dark:hover:border-obsidian-accent transition-all duration-300 hover:shadow-lg hover:-translate-y-1">
                                     <div className="flex flex-col md:flex-row md:items-baseline justify-between mb-4">
                                         <div className="flex items-baseline gap-4">
-                                            <span className="text-4xl font-serif text-parchment-muted/30 dark:text-obsidian-muted/30 group-hover:text-parchment-accent dark:group-hover:text-obsidian-accent transition-colors">
+                                            <span className="text-3xl md:text-4xl font-serif text-parchment-muted/30 dark:text-obsidian-muted/30 group-hover:text-parchment-accent dark:group-hover:text-obsidian-accent transition-colors">
                                                 {String(chapter.number).padStart(2, '0')}
                                             </span>
-                                            <h3 className="text-2xl md:text-3xl font-serif text-parchment-text dark:text-obsidian-text group-hover:text-parchment-accent dark:group-hover:text-obsidian-accent transition-colors">
+                                            <h3 className="text-xl md:text-3xl font-serif text-parchment-text dark:text-obsidian-text group-hover:text-parchment-accent dark:group-hover:text-obsidian-accent transition-colors">
                                                 {chapter.title}
                                             </h3>
                                         </div>

@@ -34,13 +34,13 @@ export default function ThemeDetail() {
                 </Link>
             </div>
 
-            <div className="max-w-4xl mx-auto px-6 py-16">
+            <div className="max-w-4xl mx-auto px-6 py-12 md:py-16">
                 {/* Header */}
-                <header className="mb-24 text-center">
+                <header className="mb-16 md:mb-24 text-center">
                     <motion.div
                         initial={{ opacity: 0, y: 20 }}
                         animate={{ opacity: 1, y: 0 }}
-                        className="inline-block px-4 py-1 mb-6 border border-parchment-accent dark:border-obsidian-accent text-parchment-accent dark:text-obsidian-accent rounded-full text-xs font-sans uppercase tracking-[0.2em]"
+                        className="inline-block px-4 py-1 mb-4 md:mb-6 border border-parchment-accent dark:border-obsidian-accent text-parchment-accent dark:text-obsidian-accent rounded-full text-[10px] md:text-xs font-sans uppercase tracking-[0.2em]"
                     >
                         Theme Analysis
                     </motion.div>
@@ -48,7 +48,7 @@ export default function ThemeDetail() {
                         initial={{ opacity: 0, y: 20 }}
                         animate={{ opacity: 1, y: 0 }}
                         transition={{ delay: 0.1 }}
-                        className="text-5xl md:text-7xl font-serif font-light mb-8 text-parchment-text dark:text-obsidian-text leading-tight"
+                        className="text-4xl md:text-7xl font-serif font-light mb-6 md:mb-8 text-parchment-text dark:text-obsidian-text leading-tight"
                     >
                         {theme.name}
                     </motion.h1>
@@ -56,7 +56,7 @@ export default function ThemeDetail() {
                         initial={{ opacity: 0 }}
                         animate={{ opacity: 1 }}
                         transition={{ delay: 0.2 }}
-                        className="text-xl md:text-2xl text-parchment-muted dark:text-obsidian-muted italic leading-relaxed max-w-2xl mx-auto"
+                        className="text-lg md:text-2xl text-parchment-muted dark:text-obsidian-muted italic leading-relaxed max-w-2xl mx-auto"
                     >
                         {theme.longDescription}
                     </motion.p>

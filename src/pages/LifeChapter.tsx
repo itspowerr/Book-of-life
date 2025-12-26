@@ -49,12 +49,21 @@ export default function LifeChapter() {
             />
 
             {/* Navigation Bar (Hidden in Reading Mode) */}
+            {/* Navigation Bar (Hidden in Reading Mode) */}
             {!readingMode && (
-                <nav className="fixed top-20 left-6 z-40 hidden xl:block">
-                    <Link to="/life" className="flex items-center gap-2 text-sm text-parchment-muted dark:text-obsidian-muted hover:text-parchment-text dark:hover:text-obsidian-text transition-colors">
-                        ← Table of Contents
-                    </Link>
-                </nav>
+                <>
+                    <nav className="fixed top-20 left-6 z-40 hidden xl:block">
+                        <Link to="/life" className="flex items-center gap-2 text-sm text-parchment-muted dark:text-obsidian-muted hover:text-parchment-text dark:hover:text-obsidian-text transition-colors">
+                            ← Table of Contents
+                        </Link>
+                    </nav>
+                    {/* Mobile Back Button */}
+                    <nav className="fixed top-20 left-4 z-40 xl:hidden">
+                        <Link to="/life" className="p-2 bg-parchment-bg/80 dark:bg-obsidian-bg/80 backdrop-blur rounded-full shadow-sm flex items-center justify-center text-parchment-text dark:text-obsidian-text">
+                            <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 19l-7-7m0 0l7-7m-7 7h18" /></svg>
+                        </Link>
+                    </nav>
+                </>
             )}
 
             {/* Reading Mode Toggle */}
