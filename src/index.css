@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Pro:wght@300;400;600&family=Inter:wght@300;400;500;600&display=swap');
+
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --parchment-bg: #faf8f5;
+    --parchment-text: #2c2416;
+    --parchment-muted: #6b5d4f;
+    --parchment-accent: #8b7355;
+    --parchment-border: #e8e4dd;
+
+    --obsidian-bg: #0f0e0d;
+    --obsidian-text: #f5f3f0;
+    --obsidian-muted: #a8a29e;
+    --obsidian-accent: #78716c;
+    --obsidian-border: #292524;
+  }
+
+  body {
+    font-family: 'Crimson Pro', Georgia, serif;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  ::selection {
+    background-color: var(--parchment-accent);
+    color: var(--parchment-bg);
+  }
+
+  .dark ::selection {
+    background-color: var(--obsidian-accent);
+    color: var(--obsidian-bg);
+  }
+
+  .theme-parchment {
+    background: var(--parchment-bg);
+    color: var(--parchment-text);
+  }
+
+  .theme-obsidian {
+    background: var(--obsidian-bg);
+    color: var(--obsidian-text);
+  }
+}
+
+/* Life page animations */
+.life-stage.stage-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
