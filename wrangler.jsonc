@@ -1,9 +1,7 @@
 {
-    "name": "philosophy-site",
     "compatibility_date": "2024-12-26",
     "assets": {
         "directory": "./dist",
         "binding": "ASSETS"
     },
-    "main": null
 }
